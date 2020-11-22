@@ -8,11 +8,11 @@ class Stack {
   }
   // 入栈
   push(item) {
-    this.stack.push(item)
+    return this.stack.push(item)
   }
   // 出栈
   pop() {
-    this.stack.pop()
+    return this.stack.pop()
   }
   // 取栈顶元素
   peek() {
@@ -27,3 +27,5 @@ class Stack {
     return this.getCount() === 0
   }
 }
+
+module.exports = Stack;

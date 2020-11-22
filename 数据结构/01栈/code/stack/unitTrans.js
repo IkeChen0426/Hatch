@@ -5,8 +5,7 @@
  * @param  {number} unit 需要转换到的进制数
  * @return {number}        转换后的结果
  */
-const Stack = require('./stack.js')
-console.log(Stack)
+var Stack = require('./stack')
 function unitTrans(num, unit) {
   let stack = new Stack()
   let bit
@@ -22,5 +21,4 @@ function unitTrans(num, unit) {
   return result
 }
 
-
-console.log(unitTrans(12,2))
+module.exports = unitTrans;
